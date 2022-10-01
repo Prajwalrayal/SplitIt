@@ -1,4 +1,8 @@
 let addel=document.getElementById("button-add");
+let newsplitEl=document.querySelector(".add-split");
+newsplitEl.addEventListener("click",()=>{
+    location.href = "C:\d-300\Splitapp\additems.html";
+})
 addel.addEventListener("click",()=>{
     const node1 = document.createElement("input");
     node1.setAttribute('id','item')
