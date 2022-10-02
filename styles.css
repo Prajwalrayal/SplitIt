@@ -81,7 +81,7 @@ border-radius: 20px;
 #button-add{
     margin-left: 130px;
 }
-#item{
+.item{
     margin-left: 2px;
     margin-right: 15px;
     width: 100px;
@@ -91,7 +91,7 @@ border-radius: 20px;
     font-style: 'Bungee';
     font-weight: bold;
 }
-#qty{
+.qty{
     margin-left: 2px;
     width: 50px;
     background-color: #222629;
@@ -100,7 +100,7 @@ border-radius: 20px;
     font-weight: bold;
     font-style: 'Bungee';
 }
-#price{
+.price{
     margin-left: 20px;
     width: 120px;
     background-color: #222629;
@@ -108,4 +108,7 @@ border-radius: 20px;
     color: white;
     font-style: 'Bungee';
     font-weight: bold;
+}
+#members{
+    height: 20px;
 }
