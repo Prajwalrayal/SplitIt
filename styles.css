@@ -108,3 +108,12 @@ img {
 #members {
   height: 20px;
 }
+
+input {
+  border: 2px #61892f solid;
+}
+
+.form-div{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
