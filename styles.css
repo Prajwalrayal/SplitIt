@@ -4,7 +4,7 @@ body {
   font-family: "Bungee";
   font-style: normal;
 }
-h1 {
+h1,h2,p {
   font-family: "Bungee";
   font-style: normal;
   stroke: solid #000000;
@@ -75,7 +75,7 @@ img {
   text-align: center;
 }
 #button-add {
-  margin-left: 130px;
+  margin-left: 30px;
 }
 .item {
   margin-left: 2px;

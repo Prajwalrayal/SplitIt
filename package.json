@@ -1,6 +1,6 @@
 {
+  "type": "module",
   "dependencies": {
-    "eslint": "^8.24.0",
-    "prettier": "^2.7.1"
+    "browserify-fs": "^1.0.0"
   }
 }

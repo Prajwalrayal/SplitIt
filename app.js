@@ -1,4 +1,9 @@
-let data = []; //array initialization of form data
+
+
+
+let data = [{
+}]; //array initialization of form data
+  
 
 
 //Function to get data of items through form
@@ -32,15 +37,15 @@ function create_form()
   const dv = document.createElement("div");
   dv.setAttribute("class", "form-div");
 
-  const node1 = add_node("item","text");
-  const node2 = add_node("qty",);
-  const node3 = add_node("price");
+  const item_name = add_node("item","text");
+  const quantity = add_node("qty",);
+  const item_price = add_node("price");
 
   // Create a text node:
   const textnode = document.createTextNode("");
 
 
-  let node=[node1,node2,node3];
+  let node=[item_name,quantity,item_price];
   // Append the text node:
   for(let i=0;i<3;i++)
   {
@@ -59,10 +64,45 @@ let addel = document.getElementById("button-add");
 addel.addEventListener("click", () => {
       create_form();
 });
+
+
+//Totalling of price
+let totEl=document.getElementById("button-tot");
+
+// Event Listner
+totEl.addEventListener("click",()=>{
+
+      get_data();
+      let sum=0;
+      for( let i=0 ; i < data.length ; i++)
+      {
+        let copy=data[i];
+        let qt=parseInt(copy.quantity);
+        let pri=parseInt(copy.price);
+        if(isNaN(qt) || isNaN(pri))
+          {
+            continue;
+          }
+        sum+=(qt*pri);
+        // console.log(qt);
+        // console.log(pri);
+      }
+      data=[];
+      let tothtml=document.getElementById("total");
+      tothtml.textContent=("Total Bill:  "+sum);
+
+});
+
+
 // Functioning of Done button
 let doEL = document.getElementById("done");
+
+// Event listner
+
 doEL.addEventListener("click", () => {
   get_data();
-  console.log(data);
-  data=[];
+  // console.log(data);
+
 });
+// module.exports={data};
+// export const message = data;
