@@ -101,6 +101,7 @@ let doEL = document.getElementById("done");
 
 doEL.addEventListener("click", () => {
   get_data();
+  data=[];
   // console.log(data);
 
 });
