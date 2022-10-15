@@ -39,8 +39,8 @@ if(localStorage.getItem("form-data"))
     fill_data(dv,"item",item["item-name"])
     fill_data(dv,"qty",item["quantity"])
     fill_data(dv,"price",item["price"])
-    total_amt()
   })
+  total_amt()
 }
 
 
