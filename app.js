@@ -26,11 +26,10 @@ function total_amt()
 function fill_data(dv,cls,item)
 { 
     cls='.'+cls
-    // console.log(item);
     dv.querySelector(cls).value=item
 }
 
-
+let inpEl
 if(localStorage.getItem("form-data"))
 {
   JSON.parse(localStorage.getItem("form-data")).forEach((item) => {
@@ -40,6 +39,8 @@ if(localStorage.getItem("form-data"))
     fill_data(dv,"qty",item["quantity"])
     fill_data(dv,"price",item["price"])
   })
+  inpEl=document.querySelectorAll("input")
+  listen(inpEl)
   total_amt()
 }
 
@@ -101,7 +102,6 @@ function create_form()
   return dv;
 }
 
-let inpEl;
 // Functioning of add item button
 let addel = document.getElementById("button-add");
 addel.addEventListener("click", () => {
