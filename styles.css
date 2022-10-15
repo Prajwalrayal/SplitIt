@@ -75,7 +75,10 @@ img {
   text-align: center;
 }
 #button-add {
-  margin-left: 30px;
+  margin-left: 40px;
+}
+#button-res {
+  margin-left: 40px;
 }
 .item {
   margin-left: 2px;
