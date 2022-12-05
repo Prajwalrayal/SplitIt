@@ -9,8 +9,8 @@ function total_amt()
   for( let i=0 ; i < data.length ; i++)
   {
     let copy=data[i];
-    let qt=parseInt(copy.quantity);
-    let pri=parseInt(copy.price);
+    let qt=parseFloat(copy.quantity);
+    let pri=parseFloat(copy.price);
     if(isNaN(qt) || isNaN(pri))
       {
         continue;
